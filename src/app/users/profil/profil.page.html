@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" color="dark">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center" color="dark">
+        My profil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- PHOTO HEAD -->
+  <div style="background-image: url({{img}});
+              background-position: center;
+              position: relative;
+              height: 120px; width: 100%;
+              margin-top: 5px; margin-bottom: 10px;">
+    <div class="layer"></div>
+    <h2><b>Michael Brown</b></h2>
+  </div>
+
+  <!-- PURCHASE STATUS -->
+  <ion-row>
+    <ion-col size="6" class="ion-text-center">
+      <h6 class="number-purchase">55</h6>
+      <p class="txt-purchase">pending purchase</p>
+    </ion-col>
+    <ion-col size="6" class="ion-text-center">
+      <h6 class="number-purchase">55</h6>
+      <p class="txt-purchase">finished purchase</p>
+    </ion-col>
+  </ion-row> <br>
+  <!-- PRODUCT LIST -->
+  <ion-row>
+    <ion-col size="6" *ngFor="let d of data"  routerLink="/show/{{ d.id }}" routerDirection="forward">
+       <img class="img-prod" [src]="d.img" />
+        <ion-text class="ion-text-center">
+            <h5 class="name">{{ d.name }} </h5>
+            <p class="detail">{{ d.detail }}</p>
+            <h6><b>{{ d.price }}$</b></h6>
+        </ion-text>
+    </ion-col>
+</ion-row>
+   
+
+</ion-content>

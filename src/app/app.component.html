@@ -1,0 +1,50 @@
+<ion-app>
+  <ion-menu side="start" content-id="main-content">
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item  routerLink="/home/man" routerDirection="forward">
+            <ion-icon name="home" slot="start"></ion-icon>
+            <ion-label>Home</ion-label>
+          </ion-item>
+          <ion-item  routerLink="/categories" routerDirection="forward">
+            <ion-icon name="grid" slot="start"></ion-icon>
+            <ion-label>Categories</ion-label>
+          </ion-item>
+          <ion-item routerLink="/collections" routerDirection="forward">
+            <ion-icon name="color-filter" slot="start"></ion-icon>
+            <ion-label>Collections</ion-label>
+          </ion-item>
+          <ion-item routerLink="/cart" routerDirection="forward">
+            <ion-icon name="cart" slot="start"></ion-icon>
+            <ion-label>Cart</ion-label>
+          </ion-item>
+          <ion-item  routerLink="/profil" routerDirection="forward">
+            <ion-icon name="person-circle" slot="start"></ion-icon>
+            <ion-label>My Profil</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="lock-closed" slot="start"></ion-icon>
+            <ion-label>Privacy</ion-label>
+          </ion-item>
+          <ion-item routerLink="/signup" routerDirection="forward">
+            <ion-icon name="download" slot="start"></ion-icon>
+            <ion-label>Sign Up</ion-label>
+          </ion-item>
+          <ion-item  routerLink="/login" routerDirection="forward">
+            <ion-icon name="log-out" slot="start"></ion-icon>
+            <ion-label>Log In</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="power" slot="start"></ion-icon>
+            <ion-label>Log Out</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+    <ion-footer>
+      <ion-text style="display: flex; justify-content: center; margin: 0 auto;"><h5>&copy; 2020 ClothesSell.v1.0</h5></ion-text>
+    </ion-footer>
+  </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>

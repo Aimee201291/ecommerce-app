@@ -1,0 +1,21 @@
+@import '../../app.component';
+img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.genre{
+    margin-top: 30px;
+}
+
+.sexe{
+    margin-top: 15px;
+}
+
+.text-bottom{
+  line-height: 25px;
+  padding: 10px;
+}

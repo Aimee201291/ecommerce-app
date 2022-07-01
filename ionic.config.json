@@ -1,0 +1,7 @@
+{
+  "name": "zeybe",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" color="dark">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Login</ion-title>
+    <ion-buttons slot="end" size="small" routerLink="/signup" routerDirection="forward">
+      <ion-button color="primary" shape="round" size="small" fill="outline" >Sign Up</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input inputmode="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+ </ion-list><br>
+  <ion-button expand="full" color="primary">Login</ion-button>
+  <a class="loss"
+  routerLink="/reset" routerDirection="forward">Loss password</a><br>
+
+  <!-- LOGIN FACEBOOK AND GOOGLE-->
+  <p class="ion-text-center">
+        LOGIN WITH
+  </p>
+  <ion-row>
+    <ion-col size="6">
+      <ion-fab-button color="danger"  class="ion-float-right">
+        <ion-icon color="light" name="logo-google"></ion-icon>
+      </ion-fab-button>
+    </ion-col>
+    <ion-col size="6">
+      <ion-fab-button color="tertiary" class="ion-float-left">
+        <ion-icon color="light" name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
+

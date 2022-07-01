@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar *ngIf="!searchBar" color="primary">
+    <ion-buttons slot="start" color="light">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">{{ collectionName }}</ion-title>
+    <ion-buttons slot="end" (click)="searchBar = true">
+        <ion-icon size="large" name="search"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end" routerLink="/cart" routerDirection="forward">
+      <ion-icon size="large" color="light" name="cart"></ion-icon>
+      <ion-badge color="dark">2</ion-badge>
+  </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar *ngIf="searchBar">
+    <ion-searchbar showCancelButton="always" (ionCancel)="searchBar = false"></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- REFRESHER -->
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+  
+ <!-- CONTENT -->   
+  <ion-row>
+    <ion-col size="6" *ngFor="let d of data"  routerLink="/show/{{ d.id }}" routerDirection="forward">
+        <img class="img-prod" [src]="d.img" />
+        <ion-text class="ion-text-center">
+            <h5 class="name">{{ d.name }} </h5>
+            <p class="detail">{{ d.detail }}</p>
+            <h6><b>{{ d.price }}$</b></h6>
+        </ion-text>
+    </ion-col>
+</ion-row>
+
+<!-- INFINITE SCROLL -->
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

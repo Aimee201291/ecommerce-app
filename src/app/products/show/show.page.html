@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" color="light">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center" color="light">
+        Product name
+    </ion-title>
+    <ion-buttons slot="end"  routerLink="/cart" routerDirection="forward">
+        <ion-icon size="large" color="light" name="cart"></ion-icon>
+        <ion-badge color="dark">{{ number }}</ion-badge>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!-- SLIDES -->
+  <ion-slides  pager="true">
+    
+    <ion-slide>
+      <button (click)="this.slides.slidePrev()" class="backBtn"> 
+        <ion-icon name="arrow-back"></ion-icon> 
+      </button>
+
+      <img src="../../../assets/imgs/veste.png"
+          (click)="onViewer('./../../../assets/imgs/veste.png')" />
+
+      <button (click)="this.slides.slideNext()" class="nextBtn"> 
+        <ion-icon name="arrow-forward">
+      </ion-icon> </button>
+    </ion-slide>
+    <ion-slide>
+      <button (click)="this.slides.slidePrev()" class="backBtn"> 
+        <ion-icon name="arrow-back"></ion-icon> 
+      </button>
+
+      <img src="./../../../assets/imgs/robe.png"
+          (click)="onViewer('./../../../assets/imgs/robe.png')" />
+      <!-- NEXT BUTTON -->
+      <button (click)="this.slides.slideNext()" class="nextBtn"> 
+        <ion-icon name="arrow-forward">
+      </ion-icon> </button>
+    </ion-slide>
+    <ion-slide>
+      <!-- PREV BUTTON -->
+      <button (click)="this.slides.slidePrev()" class="backBtn"> 
+        <ion-icon name="arrow-back"></ion-icon> 
+      </button>
+
+      <img src="../../../assets/imgs/t1.jpg" 
+          (click)="onViewer('./../../../assets/imgs/t1.jpg')"/>
+
+      <button (click)="this.slides.slideNext()" class="nextBtn"> 
+        <ion-icon name="arrow-forward">
+      </ion-icon> </button>
+    </ion-slide>
+    
+  </ion-slides><br>
+
+<!-- DETAIL CONTENT -->
+<ion-row>
+  <ion-col size="6" class="ion-text-center">
+    <h5 class="mark"><b>Mark and version Name</b></h5>
+    <p>Categories</p>
+  </ion-col>
+  <ion-col size="6" class="ion-text-center">
+    <h5><b>55.42$</b></h5>
+  </ion-col>
+</ion-row><br>
+<!-- COLOR -->
+<ion-item>
+  <ion-label>Color</ion-label>
+  <ion-select value="yellow" okText="Okay" cancelText="Dismiss">
+    <ion-select-option value="yellow">Yellow</ion-select-option>
+    <ion-select-option value="black">Black</ion-select-option>
+    <ion-select-option value="red">Red</ion-select-option>
+  </ion-select>
+</ion-item>
+<!-- ADD BUTTON-->
+<ion-button expand="full" (click)="addCart()" color="primary">ADD TO CART</ion-button><br>
+<!-- DESCRIPTION -->
+<div style="padding: 10px;">
+     <h6 class="ion-text-center"><b>Product Description</b></h6>
+     <ion-text class="ion-text-justify">
+      Using custom fonts is very easy and straight-forward in pps. There are two ways it can  hence single font-face. 
+     </ion-text>
+</div>
+
+</ion-content>

@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" color="dark">
+      <ion-back-button  [text]=" "></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center" color="dark">
+       Step 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <!-- CARD INFORMATION -->
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label class="ion-text-center head-text">Card Information</ion-label>
+    </ion-item-divider>
+  
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input inputmode="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Surname</ion-label>
+      <ion-input inputmode="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input inputmode="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Card Number</ion-label>
+      <ion-input inputmode="number"></ion-input>
+    </ion-item>
+    <ion-label class="exp-label">Expire Date</ion-label>
+    <ion-row>
+      <ion-col size="4">
+        <ion-item>
+          <ion-label position="floating">Month</ion-label>
+          <ion-select placeholder="01">
+            <ion-select-option value="01">01</ion-select-option>
+            <ion-select-option value="02">03</ion-select-option>
+            <ion-select-option value="03">03</ion-select-option>
+            <ion-select-option value="04">04</ion-select-option>
+            <ion-select-option value="05">05</ion-select-option>
+            <ion-select-option value="06">06</ion-select-option>
+            <ion-select-option value="07">07</ion-select-option>
+            <ion-select-option value="08">08</ion-select-option>
+            <ion-select-option value="09">09</ion-select-option>
+            <ion-select-option value="10">10</ion-select-option>
+            <ion-select-option value="11">11</ion-select-option>
+            <ion-select-option value="12">12</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4">
+        <ion-item>
+          <ion-label position="floating">Year</ion-label>
+          <ion-select placeholder="2022">
+            <ion-select-option value="2020">2020</ion-select-option>
+            <ion-select-option value="2021">2021</ion-select-option>
+            <ion-select-option value="2022">2022</ion-select-option>
+            <ion-select-option value="2023">2023</ion-select-option>
+            <ion-select-option value="2024">2024</ion-select-option>
+            <ion-select-option value="2025">2025</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4">
+        <ion-item>
+          <ion-label position="floating">CVC</ion-label>
+          <ion-input inputmode="number"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    
+  </ion-item-group>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-button color="primary" expand="full" routerLink="/checkout3" routerDirection="forward"
+  >NEXT</ion-button>
+</ion-footer>

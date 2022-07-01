@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" (click)="openMenu()">
+        <ion-icon size="large" color="light" name="menu"></ion-icon>
+    </ion-buttons>
+      <ion-title class="ion-text-center" color="light">
+         Categories
+      </ion-title>
+      <ion-buttons slot="end" routerLink="/cart" routerDirection="forward">
+        <ion-icon size="large" color="light" name="cart"></ion-icon>
+        <ion-badge color="dark">2</ion-badge>
+    </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div *ngFor="let d of data"  
+    style=" background-image: url({{d.img}});
+            background-position: center;
+            position: relative; border-radius: 15px; 
+            height: 120px; width: 100%;
+            margin-top: 5px;"
+            routerLink="/list/{{ d.name }}" routerDirection="forward">
+        <div class="layer">
+        </div>
+        <h2>{{ d.name }}</h2>
+    </div>
+
+</ion-content>

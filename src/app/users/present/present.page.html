@@ -1,0 +1,26 @@
+<ion-content>
+  <!-- HEAD TOOLBAR-->
+  <ion-toolbar>
+    <ion-title class="ion-text-center" color="dark">
+      <h2>I am a</h2>
+    </ion-title>
+  </ion-toolbar>
+  <!-- DIV WOMAN-->
+  <div class="genre" routerLink="/home/woman" routerDirection="forward">
+    <img [src]="woman" />
+    <ion-text class="ion-text-center"><h4 class="sexe">Woman</h4></ion-text>
+  </div>
+  <!-- DIV MAN-->
+  <div class="genre" routerLink="/home/man" routerDirection="forward">
+    <img [src]="man" />
+    <ion-text class="ion-text-center"><h4 class="sexe">Man</h4></ion-text>
+  </div>
+  <br>
+</ion-content>
+
+<!-- FOOTER -->
+<ion-footer  class="ion-no-border">
+  <p align="center" class="text-bottom" color="dark">
+    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+  </p>
+</ion-footer>

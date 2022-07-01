@@ -1,0 +1,26 @@
+@import '../../app.component';
+.txt-purchase{
+    font-size: 10px;
+}
+
+.number-purchase{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+h2{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 7vh;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
