@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./present.page.scss'],
 })
 export class PresentPage implements OnInit {
-  woman = '../../../assets/imgs/presentgirl.jpg';
+  logo = '../../../assets/imgs/logos/logo_2.jpg';
   man = '../../../assets/imgs/presentboy.jpg';
   constructor() { }
 

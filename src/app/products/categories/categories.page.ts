@@ -8,21 +8,21 @@ import { MenuController } from '@ionic/angular';
 })
 export class CategoriesPage implements OnInit {
   data = [{
-    img: '../../../assets/imgs/jeans.jpg',
-    name: 'Jeans'
+    img: '../../../assets/imgs/entradas/chistobites.JPG',
+    name: 'Entradas'
   }, {
-    img: '../../../assets/imgs/t4.jpg',
-    name: 'T-short'
+    img: '../../../assets/imgs/entradas/4estaciones.JPG',
+    name: 'Pizzas tradicionales'
   }, {
-    img: '../../../assets/imgs/nike6.jpg',
-    name: 'Trousers'
+    img: '../../../assets/imgs/entradas/triple_pepperoni.JPG',
+    name: 'Especialidades Al quadrado'
   }, {
-    img: '../../../assets/imgs/nike4.jpg',
-    name: 'Cheeky'
-  },  {
+    img: '../../../assets/imgs/entradas/galletas.JPG',
+    name: 'Postres Al quadrado'
+  }/*,  {
     img: '../../../assets/imgs/girl.jpg',
     name: 'Bigini'
-  }];
+  }*/];
   constructor(public menuController: MenuController) { }
 
   ngOnInit() {
