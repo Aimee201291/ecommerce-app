@@ -1,14 +1,14 @@
 <ion-header>
-  <ion-toolbar *ngIf="!searchBar" color="primary">
-    <ion-buttons slot="start" color="light">
+  <ion-toolbar *ngIf="!searchBar" color="warning">
+    <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title color="light">{{ categoryName }}</ion-title>
+    <ion-title><h1>{{ categoryName }}</h1></ion-title>
     <ion-buttons slot="end" (click)="searchBar = true">
         <ion-icon size="large" name="search"></ion-icon>
     </ion-buttons>
     <ion-buttons slot="end" routerLink="/cart" routerDirection="forward">
-      <ion-icon size="large" color="light" name="cart"></ion-icon>
+      <ion-icon size="large" name="cart"></ion-icon>
       <ion-badge color="dark">2</ion-badge>
   </ion-buttons>
   </ion-toolbar>
@@ -17,7 +17,7 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="primary">
   <!-- REFRESHER -->
     <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
       <ion-refresher-content></ion-refresher-content>
@@ -26,11 +26,11 @@
 <!-- CONTENT -->   
   <ion-row>
     <ion-col size="6" *ngFor="let d of data"  routerLink="/show/{{ d.id }}" routerDirection="forward">
-        <img class="img-prod" [src]="d.img" />
+        <img style="max-height: 600px;" class="img-prod" [src]="d.img" />
         <ion-text class="ion-text-center">
-            <h5 class="name">{{ d.name }} </h5>
-            <p class="detail">{{ d.detail }}</p>
-            <h6><b>{{ d.price }}$</b></h6>
+            <h2 class="name">{{ d.name }} </h2>
+            <p class="detail warning-color">{{ d.detail }}</p>
+            <h3><b>{{ d.price }}$</b></h3>
         </ion-text>
     </ion-col>
   </ion-row>

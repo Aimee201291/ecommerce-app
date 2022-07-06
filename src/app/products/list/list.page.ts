@@ -9,33 +9,33 @@ import { ActivatedRoute } from '@angular/router';
 export class ListPage implements OnInit {
   data = [
     {
-      id: '4',
-      name: 'Clothes 4',
-      img: '../../../assets/imgs/nike7.jpg',
-      detail: 'little come from france',
-      price: '88.22'
-    },
-    {
       id: '1',
-      name: 'Clothes 1',
-      img: '../../../assets/imgs/veste.png',
-      detail: 'little come from france',
-      price: '88.22'
+      name: 'Pizza Al Quadrado Especial',
+      img: '../../../assets/imgs/especialidades/especial.JPG',
+      detail: 'Queso mozzarella, salsa napole, salchicha italiana, pepperoni, jamón, maíz.',
+      price: '$14'
     },
     {
       id: '2',
-      name: 'Clothes 2',
-      img: '../../../assets/imgs/nike8.jpeg',
-      detail: 'little come from france',
-      price: '88.22'
+      name: 'Montserratina',
+      img: '../../../assets/imgs/especialidades/la-montserratina.JPG',
+      detail: 'Queso mozzarella, salsa napole, chorizo de ajo, chorizo ahumado, chistorra, cebolla y pimentón.',
+      price: '$14'
     },
     {
       id: '3',
-      name: 'Clothes 3',
-      img: '../../../assets/imgs/nike6.jpg',
-      detail: 'little come from france',
-      price: '88.22'
+      name: 'Tocinetor',
+      img: '../../../assets/imgs/especialidades/tocinetor.JPG',
+      detail: 'Queso mozzarella, salsa napole y 300 gr de tocineta.',
+      price: '$14'
     },
+    {
+      id: '4',
+      name: 'Triple pepperoni',
+      img: '../../../assets/imgs/especialidades/triple-pepperoni.JPG',
+      detail: 'Queso mozzarella, salsa napole y 300 gr de pepperoni',
+      price: '$16'
+    }/*,
     {
       id: '4',
       name: 'Clothes 4',
@@ -49,7 +49,7 @@ export class ListPage implements OnInit {
       img: '../../../assets/imgs/t1.jpg',
       detail: 'little come from france',
       price: '88.22'
-    }
+    }*/
   ];
   categoryName;
   searchBar = false;
@@ -57,7 +57,16 @@ export class ListPage implements OnInit {
 
   ngOnInit() {
     this.categoryName = this.actRoute.snapshot.params.name;
+    while(this.categoryName.indexOf("-") != -1) {
+      this.categoryName = this.categoryName.replace('-', ' ');
+    }
+    this.categoryName = this.capitalizeFirstLetter(this.categoryName);
   }
+
+  capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+  
 
   // refresh data
   doRefresh(event) {

@@ -9,20 +9,25 @@ import { MenuController } from '@ionic/angular';
 export class CategoriesPage implements OnInit {
   data = [{
     img: '../../../assets/imgs/entradas/chistobites.JPG',
-    name: 'Entradas'
+    name: 'Entradas',
+    urlName: 'entradas'
   }, {
     img: '../../../assets/imgs/entradas/4estaciones.JPG',
-    name: 'Pizzas tradicionales'
+    name: 'Pizzas tradicionales',
+    urlnName: 'pizzas-tradicionales'
   }, {
     img: '../../../assets/imgs/entradas/triple_pepperoni.JPG',
-    name: 'Especialidades Al quadrado'
+    name: 'Especialidades Al Quadrado',
+    urlName: 'especialidades-al-quadrado'
   }, {
     img: '../../../assets/imgs/entradas/galletas.JPG',
-    name: 'Postres Al quadrado'
+    name: 'Postres Al qQuadrado',
+    urlName: 'postres-al-quadrado'
   }/*,  {
     img: '../../../assets/imgs/girl.jpg',
     name: 'Bigini'
   }*/];
+
   constructor(public menuController: MenuController) { }
 
   ngOnInit() {
