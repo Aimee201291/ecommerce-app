@@ -34,46 +34,220 @@
 <ion-header>
   <div class="header-image-container">
     <ion-toolbar color="transparent">
-    <ion-buttons class="ion-padding-end" slot="start">
-      <ion-icon size="large" color="light" name="arrow-back-outline"></ion-icon>
-    </ion-buttons>
-    <ion-buttons class="ion-padding-end" slot="end"  routerLink="/cart" routerDirection="forward">
+      <ion-buttons class="ion-padding-end" slot="start">
+        <ion-icon size="large" color="light" name="arrow-back-outline"></ion-icon>
+      </ion-buttons>
+      <ion-buttons class="ion-padding-end" slot="end"  routerLink="/cart" routerDirection="forward">
         <ion-icon size="large" color="light" name="search-outline"></ion-icon>
-    </ion-buttons>
-  </ion-toolbar>
-    <img class="header-image-container__image" src="../../../assets/imgs/background/background-imag.JPG">
+      </ion-buttons>
+    </ion-toolbar>
+      <img class="header-image-container__image" src="../../../assets/imgs/background/background-imag.JPG">
     <div class="logo-container">
       <div class="logo-container__logo">
       </div>
     </div>
   </div>
-
-
-
-
-  <!--div class="header-img2">
-
-  </div-->
-
-  <!--Old-->
-  <!--ion-toolbar>
-    <ion-buttons class="ion-padding-end" slot="start">
-      <ion-icon size="large" color="light" name="arrow-back-outline"></ion-icon>
-    </ion-buttons>
-    <ion-title class="ion-text-center" color="light">
-        Product name
-    </ion-title>
-    <ion-buttons class="ion-padding-end" slot="end"  routerLink="/cart" routerDirection="forward">
-        <ion-icon size="large" color="light" name="search-outline"></ion-icon>
-    </ion-buttons>
-  </ion-toolbar-->
 </ion-header>
 
 <ion-content>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  <ion-card class="header">
+    <ion-card-header>
+      <ion-card-title>Al Quadrado Pizza</ion-card-title>
+      <ion-card-subtitle>PIZZA - ITALIANO - POSTRES</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-icon name="time-outline"></ion-icon><span>11:30AM - 9PM </span><ion-icon name="star-outline"></ion-icon><span>5</span><ion-icon name="bicycle-outline"></ion-icon><span>30min</span>
+    </ion-card-content>
+  </ion-card>
 
+  <ion-grid class="custom-margin">
+    <h2 id="descubrelo">DESCÚBRELO</h2>
+    <ion-row>
+      <ion-col size="6" size-xs="12" size-sm="12" size-md="12" size-lg="6" style="padding-left: 0px; padding-right: 0px">
+        <ion-card style="margin-left: 0px">
+          <ion-row style="min-height: 140px" justify-content-between>
+            <!--ion-col size="sm" col-auto style="padding: 0px">
+              <img src="../../../assets/imgs/pizza_montserratina_2.jpg" style="height: 100%" item-left/>
+            </ion-col-->
+            <ion-col style="position: relative">
+              <ion-row text-wrap>
+                <div style="font-size: 16px; font-weight: 700"><span>Pizza Montserratina</span></div>
+              </ion-row>
+              <ion-row text-wrap>
+                <div class="description--truncate--two--lines">Pizza 40 x 40. Queso mozarella + Salsa nápole + Chorizo de ajo
+                  + Chorizo ahumado + Chistorra + Cebolla + Pimentón.
+                </div>
+              </ion-row>
+              <ion-row style="margin-top:25px" text-wrap>
+                <div style="position: absolute; bottom: 12px; left: 5px; justify-content: space-between; font-weight: 900">$14.00</div>
+                <!--div style="position: absolute; bottom: 0px; right: 5px;"><ion-icon size="large" name="add-circle"></ion-icon></div-->
+              </ion-row>
+            </ion-col>
+            <ion-col size="sm" col-auto style="padding: 0px">
+              <img src="../../../assets/imgs/pizza_montserratina_2.jpg" style="height: 100%" item-left/>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" size-xs="12" size-sm="12" size-md="12" size-lg="6" style="padding-left: 0px; padding-right: 0px">
+        <ion-card style="margin-left: 0px; min-height: 140px">
+          <ion-row style="min-height: 140px"  justify-content-between>
+            <!--ion-col size="sm" col-auto style="padding: 0px">
+              <img src="../../../assets/imgs/pizza_margarita_ingrediente_adic_2.jpg" style="height: 100%" item-left/>
+            </ion-col-->
+            <ion-col style="position: relative">
+              <ion-row text-wrap>
+                <div style="font-size: 16px; font-weight: 700"><span>Pizza Margarita + 1 Ingrediente Adicional Incluido</span></div>
+              </ion-row>
+              <ion-row text-wrap>
+                <div class="text-truncate-2-line">Pizza 40 x 40. Salsa nápole + mozzarella.</div>
+              </ion-row>
+              <ion-row style="margin-top:25px" text-wrap>
+                <div style="position: absolute; bottom: 12px; left: 5px; justify-content: space-between; font-weight: 900">$9.00</div>
+                <!--div style="position: absolute; bottom: 0px; right: 5px;"><ion-icon size="large" name="add-circle"></ion-icon></div-->
+              </ion-row>
+            </ion-col>
+            <ion-col size="sm" col-auto style="padding: 0px">
+              <img src="../../../assets/imgs/pizza_margarita_ingrediente_adic_2.jpg" style="height: 100%" item-left/>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" size-xs="12" size-sm="12" size-md="12" size-lg="6" style="padding-left: 0px; padding-right: 0px">
+        <ion-card style="margin-left: 0px">
+          <ion-row style="min-height: 140px" justify-content-between>
+            <ion-col size="sm" col-auto style="padding: 0px">
+              <img src="../../../assets/imgs/pizza_montserratina_2.jpg" style="height: 100%" item-left/>
+            </ion-col>
+            <ion-col style="position: relative">
+              <ion-row text-wrap>
+                <div style="font-size: 16px"><span>Deluxe</span></div>
+              </ion-row>
+              <ion-row text-wrap>
+                <div class="text-truncate-2-line">Pepperoni, pimentón verde, cebolla, champiñones y salchicha italiana.</div>
+              </ion-row>
+              <ion-row style="margin-top:25px" text-wrap>
+                <div style="position: absolute; bottom: 12px; left: 5px; justify-content: space-between">Bs. 70</div>
+                <div style="position: absolute; bottom: 0px; right: 5px;"><ion-icon size="large" name="add-circle"></ion-icon></div>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <h2 id="especialidades">Especialidades</h2>
+    <ion-row>
+      <ion-col size="6" size-xs="12" size-sm="12" size-md="12" size-lg="6" style="padding-left: 0px; padding-right: 0px">
+        <ion-card style="margin-left: 0px">
+          <ion-row style="min-height: 140px" justify-content-between>
+            <ion-col size="sm" col-auto style="padding: 0px">
+              <img src="../../../assets/imgs/pizza_montserratina_2.jpg" style="height: 100%" item-left/>
+            </ion-col>
+            <ion-col style="position: relative">
+              <ion-row text-wrap>
+                <div style="font-size: 16px"><span>Pepperoni xtreme</span></div>
+              </ion-row>
+              <ion-row text-wrap>
+                <div class="text-truncate-2-line">Doble piso de Pepperoni, queso provolone, orégano en el tope y borde con queso parmesano.</div>
+              </ion-row>
+              <ion-row style="margin-top:25px" text-wrap>
+                <div style="position: absolute; bottom: 12px; left: 5px; justify-content: space-between">Bs. 90</div>
+                <div style="position: absolute; bottom: 0px; right: 5px;"><ion-icon size="large" name="add-circle"></ion-icon></div>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" size-xs="12" size-sm="12" size-md="12" size-lg="6" style="padding-left: 0px; padding-right: 0px">
+        <ion-card style="margin-left: 0px">
+          <ion-row style="min-height: 140px" justify-content-between>
+            <ion-col size="sm" col-auto style="padding: 0px">
+              <img src="../../../assets/imgs/pizza_montserratina_2.jpg" style="height: 100%" item-left/>
+            </ion-col>
+            <ion-col style="position: relative">
+              <ion-row text-wrap>
+                <div style="font-size: 16px"><span>Meat xtreme</span></div>
+              </ion-row>
+              <ion-row text-wrap>
+                <div class="text-truncate-2-line">Pepperoni, jamón, salchicha italiana, carne y extra de queso.</div>
+              </ion-row>
+              <ion-row style="margin-top:25px" text-wrap>
+                <div style="position: absolute; bottom: 12px; left: 5px; justify-content: space-between">Bs. 100</div>
+                <div style="position: absolute; bottom: 0px; right: 5px;"><ion-icon size="large" name="add-circle"></ion-icon></div>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" size-xs="12" size-sm="12" size-md="12" size-lg="6" style="padding-left: 0px; padding-right: 0px">
+        <ion-card style="margin-left: 0px">
+          <ion-row style="min-height: 140px" justify-content-between>
+            <ion-col size="sm" col-auto style="padding: 0px">
+              <img src="../../../assets/imgs/pizza_montserratina_2.jpg" style="height: 100%" item-left/>
+            </ion-col>
+            <ion-col style="position: relative">
+              <ion-row text-wrap>
+                <div style="font-size: 16px"><span>Veggie</span></div>
+              </ion-row>
+              <ion-row text-wrap>
+                <div class="text-truncate-2-line">Pimentón verde, cebolla, champiñones, aceitunas negras y extra de queso.</div>
+              </ion-row>
+              <ion-row style="margin-top:25px" text-wrap>
+                <div style="position: absolute; bottom: 12px; left: 5px; justify-content: space-between">Bs. 75</div>
+                <div style="position: absolute; bottom: 0px; right: 5px;"><ion-icon size="large" name="add-circle"></ion-icon></div>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <h2 id="hawaiana">Hawaiana</h2>
+    <ion-row>
+      <ion-col size="6" size-xs="12" size-sm="12" size-md="12" size-lg="6" style="padding-left: 0px; padding-right: 0px">
+        <ion-card style="margin-left: 0px">
+          <ion-row style="min-height: 140px" justify-content-between>
+            <ion-col size="sm" col-auto style="padding: 0px">
+              <img src="../../../assets/imgs/pizza_montserratina_2.jpg" style="height: 100%" item-left/>
+            </ion-col>
+            <ion-col style="position: relative">
+              <ion-row text-wrap>
+                <div style="font-size: 16px"><span>Honolulu</span></div>
+              </ion-row>
+              <ion-row text-wrap>
+                <div class="text-truncate-2-line">Jamón, piña, tocineta, pimentón rojo asado y queso provolone.</div>
+              </ion-row>
+              <ion-row style="margin-top:25px" text-wrap>
+                <div style="position: absolute; bottom: 12px; left: 5px; justify-content: space-between">Bs. 75</div>
+                <div style="position: absolute; bottom: 0px; right: 5px;"><ion-icon size="large" name="add-circle"></ion-icon></div>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" size-xs="12" size-sm="12" size-md="12" size-lg="6" style="padding-left: 0px; padding-right: 0px">
+        <ion-card style="margin-left: 0px">
+          <ion-row style="min-height: 140px" justify-content-between>
+            <ion-col size="sm" col-auto style="padding: 0px">
+              <img src="../../../assets/imgs/pizza_montserratina_2.jpg" style="height: 100%" item-left/>
+            </ion-col>
+            <ion-col style="postion: relative">
+              <ion-row text-wrap>
+                <div style="font-size: 16px"><span>Waikiki</span></div>
+              </ion-row>
+              <ion-row text-wrap>
+                <div class="text-truncate-2-line">Jamón, piña y extra de queso.</div>
+              </ion-row>
+              <ion-row style="margin-top:25px" text-wrap>
+                <div style="position: absolute; bottom: 12px; left: 5px; justify-content: space-between">Bs. 65</div>
+                <div style="position: absolute; bottom: 0px; right: 5px;"><ion-icon size="large" name="add-circle"></ion-icon></div>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
