@@ -8,19 +8,19 @@ import { MenuController } from '@ionic/angular';
 })
 export class CategoriesPage implements OnInit {
   data = [{
-    img: '../../../assets/imgs/entradas/chistobites.JPG',
+    img: '../../../assets/imgs/entradas2/chistobites.JPG',
     name: 'Entradas',
     urlName: 'entradas'
   }, {
-    img: '../../../assets/imgs/entradas/4estaciones.JPG',
+    img: '../../../assets/imgs/entradas2/4estaciones.JPG',
     name: 'Pizzas tradicionales',
     urlnName: 'pizzas-tradicionales'
   }, {
-    img: '../../../assets/imgs/entradas/triple_pepperoni.JPG',
+    img: '../../../assets/imgs/entradas2/triple_pepperoni.JPG',
     name: 'Especialidades Al Quadrado',
     urlName: 'especialidades-al-quadrado'
   }, {
-    img: '../../../assets/imgs/entradas/galletas.JPG',
+    img: '../../../assets/imgs/entradas2/galletas.JPG',
     name: 'Postres Al qQuadrado',
     urlName: 'postres-al-quadrado'
   }/*,  {

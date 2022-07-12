@@ -28,6 +28,10 @@ ion-title, h2 {
     /*color: #ffc300;*/
 }
 
+.header-grid {
+    padding: 0px;
+}
+
 .header-image-container__image {
     position: relative;
     width: 100%;
@@ -56,10 +60,11 @@ ion-title, h2 {
     transform: translate(-50%, 80%);
 }
 
-@media (min-width: 500px) {
-    .logo-container {
-        width: 10rem;
-        height: 10rem;
+@media (max-width: 600px) {
+    .header {
+        margin: 2.5rem 0px 2.5rem 0px;
+        /*padding: 0px 0px 1rem 0px;*/
+        box-shadow: none;
     }
 }
 
@@ -76,10 +81,16 @@ ion-toolbar {
     position: absolute;
 }
 
-.header {
-    margin-top: 3.75rem;
-    padding: 1rem;
-    box-shadow: none;
+@media (min-width: 600px) {
+    .logo-container {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .header {
+        margin: 4.5rem 0px 2.5rem 0px;
+        box-shadow: none;
+    }
 }
 
 ion-card {
@@ -107,18 +118,43 @@ h2 {
     font-family: var(--ion-font-family);
 }
 
-ion-col > ion-card {
+ion-row.pizzas-container > ion-col > ion-card {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+    ion-row.pizzas-container > ion-col > ion-card {
+        margin-right: 1rem;
+    }
+}
+
+.pizzas-container__title {
+    font-size: 1rem; 
+    font-weight: 700;
 }
 
 .header-ios ion-toolbar:last-of-type {
     --border-width: 0 0 0px;
 }
 
-.description--truncate--two--lines {
+.pizzas-container__description--truncate-two-lines {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
+}
+
+.pizzas-container__price {
+    position: absolute; 
+    bottom: 12px; 
+    left: 5px;
+    justify-content: space-between;
+    font-weight: 900;
+}
+
+.pizzas-container__image {
+    height: 100%;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
 }
