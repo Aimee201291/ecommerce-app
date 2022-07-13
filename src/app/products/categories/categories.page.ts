@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import {IonContent} from '@ionic/angular';
 
 @Component({
   selector: 'app-categories',
@@ -7,7 +8,10 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['./categories.page.scss'],
 })
 export class CategoriesPage implements OnInit {
-  data = [{
+
+  @ViewChild(IonContent, { static: false }) content: IonContent;
+
+  data2 = [{
     img: '../../../assets/imgs/entradas2/chistobites.JPG',
     name: 'Entradas',
     urlName: 'entradas'
@@ -35,6 +39,18 @@ export class CategoriesPage implements OnInit {
 
   async openMenu() {
     await this.menuController.open();
+  }
+
+  opts = {
+    freeMode: true,
+    slidesPerView: 2.6,
+    slidesOffsetBefore: 30,
+    slidesOffsetAfter: 100
+  }
+
+  scrollToLabel(title) {
+    var titleELe = document.getElementById(title);
+    this.content.scrollToPoint(0, titleELe.offsetTop - 30);
   }
 
 }

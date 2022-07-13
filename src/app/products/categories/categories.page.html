@@ -99,6 +99,24 @@
       </ion-col>
     </ion-row>
 
+    <ion-slides [options]="opts">
+      <ion-slide>
+        <ion-button (click)="scrollToLabel('iconicos')">
+          Icónicos
+        </ion-button>
+      </ion-slide>
+      <ion-slide>
+        <ion-button (click)="scrollToLabel('entradas')">
+          Entradas
+        </ion-button>
+      </ion-slide>
+      <ion-slide>
+        <ion-button (click)="scrollToLabel('especialidades')">
+          Especialidades Al Quadrado
+        </ion-button>
+      </ion-slide>
+    </ion-slides>
+
     <h2 id="iconicos">ICÓNICOS</h2>
     <ion-row class="pizzas-container">
       <ion-col size="6" size-xs="12" size-sm="12" size-md="12" size-lg="6">
